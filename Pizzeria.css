@@ -12,6 +12,7 @@ ul {
 
 
 
+
 .NavBarAll {
   display: flex;
   z-index: 10000;
@@ -128,7 +129,6 @@ ul {
       text-align: left;
     }
   }
-
 
 
 
