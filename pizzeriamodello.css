@@ -411,24 +411,31 @@ div#chisiamo li.orari {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 div#copy {
     margin-top: 15px;
     background-color: #1d1c1c;
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .orari-container table {
+/* Assicura che la tabella utilizzi l'intera larghezza disponibile */
+    }
+
+    div#chisiamo li.orari {
+        width: 540px; /* Rende il container degli orari più largo e meno lungo */
+    }
+
+    div#chisiamo li.luogo iframe {
+        width: 320px; /* Riduce la larghezza della mappa */
+        margin: 0 auto; /* Centra la mappa e aggiunge margine sui lati */
+    }
 }
