@@ -20,6 +20,29 @@
   </div>
 </div>
 
+<script>
+    function toggleResponsiveMenu() {
+        var navbar = document.getElementById("myTopnav");
+        if (navbar.className === "topnav") {
+            navbar.className += " responsive";
+        } else {
+            navbar.className = "topnav";
+        }
+    }
+    
+    document.addEventListener("DOMContentLoaded", function () {
+        // Setup event listeners for menu items
+        const menuItems = document.querySelectorAll('#myTopnav a:not(.icon)');
+        menuItems.forEach(item => {
+            item.addEventListener('click', function() {
+                var navbar = document.getElementById("myTopnav");
+                if (navbar.className.includes("responsive")) {
+                    navbar.className = "topnav";
+                }
+            });
+        });
+    });
+  </script>
     
     <div id="testa">
         <h2>testo testo testo<br>testo testo testo<br>testo testo testo</h2> <!--padding: 50px 30px; position left-->
