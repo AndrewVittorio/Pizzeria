@@ -249,9 +249,9 @@ div#menu h1 {
 }
 
 /* Regole CSS per dispositivi più grandi */
-@media (min-width: 768px) {
+@media (min-width: 600px) {
     div#menu li {
-        width: 35%; /* Dimensioni ancora più piccole per i computer */
+        width: 34%; /* Dimensioni ancora più piccole per i computer */
     }
 }
 
@@ -337,7 +337,15 @@ div#chiasiamo> * {
     z-index: 2;
 }
 
+div#chisiamo {
+    padding-bottom: 0; /* Rimuovi il padding inferiore se è presente */
+    margin-bottom: 0; /* Assicurati che non ci sia margine inferiore */
+}
 
+div#footer, .footer {
+    padding-top: 0; /* Rimuovi il padding superiore se è presente */
+    margin-top: 0; /* Assicurati che non ci sia margine superiore */
+}
 
 
 
@@ -375,10 +383,9 @@ div#chisiamo li.orari {
 
 
 
-
-
 .orari-container {
     text-align: center; /* Centra il contenuto della tabella */
+
 }
 
 .orari table {
@@ -386,6 +393,11 @@ div#chisiamo li.orari {
     border-collapse: collapse;
     width: auto; /* O una larghezza specifica, se necessario */
 }
+
+.orari-container {
+    width: 100%; /* Rimuovi se vuoi che la tabella si adatti alla larghezza del contenitore */
+}
+
 
 .orari td {
     padding: 5px;
