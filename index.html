@@ -12,7 +12,7 @@
 
 <div class="NavBarAll">
   <div class="topnav" id="myTopnav">
-    <a class="active"><img src="LogoAV.png" style="width: 15vh;"></a>
+    <a class="active"><h4 style="border-bottom: 1px solid white; padding: 0px;" >Pizzeria Ternana</h4></a>
       <a href="#Modelli">Modelli</a>
       <a href="#Testimonianza">Testimonianza</a>
       <a href="#Contatti">Contatti</a>
@@ -54,29 +54,24 @@
     </div>
 
 
-    <div id="simboli"> 
-        <ul>
-            <li><button class="chi"><img src="restaurant_FILL0_wght400_GRAD0_opsz24 (2).svg" alt="simbolo"><br>Menù</button></li>
-            <li><button class="antipasti"><img src="local_pizza_FILL0_wght400_GRAD0_opsz24.svg" alt="simbolo"><br><a href="#menu">Pizze</a></button></li>
-            <li><button class="pizza"><img src="group_FILL0_wght400_GRAD0_opsz24.svg" alt="simbolo"><br>Chi siamo</button></li> 
-            <li><button class="primi"><img src="location_on_FILL0_wght400_GRAD0_opsz24.svg" alt="simbolo"><br><a href="#chisiamo">Dove ci trovi</a></button></li> 
-        <!-- top-> height=width; border-radius: 10px;-->
-        </ul>
-    </div>
-    <br>
-    <br>
-    <div id="bio"> <!--margin-left-->
-        <img src="https://lazioshopping.it/wp-content/uploads/2021/10/2017-03-27.jpg" alt="pizza"> <!--float: left; border-radius: 15px;-->
-        <!-- bottom-> text-align: center;-->
-        <h5 class="a">Benvenuto a</h5> <!--margin-bootm: 20px;-->
-        <h2 class="a">nome nome nome</h2>
-        <p class="a">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas cum dignissimos debitis sapiente laborum exercitationem cupiditate corrupti ratione eum consequatur ad, ullam mollitia! Aspernatur, lorem</p>
-        <ul class="a">
-            <li>Caratteristica</li>
-            <li>Caratteristica</li>
-        </ul>
-    </div>
 
+    <br>
+    <br>
+    <div id="bio">
+      <img src="https://lazioshopping.it/wp-content/uploads/2021/10/2017-03-27.jpg" alt="pizza">
+      <div class="text-container">
+          <h5 class="a">Benvenuto a</h5>
+          <h2 class="a">Pizzeria Ternana</h2>
+          <p class="a">
+            Benvenuti alla "PizzeriaTernana"! 
+            Da oltre un quarto di secolo, siamo il punto di riferimento
+             per pizze autentiche e piatti italiani deliziosi. 
+             La nostra storia è una storia d'amore per la pizza 
+             e la tradizione italiana. Siamo pronti ad accogliervi con
+             calore e passione ogni giorno!</p>
+
+      </div>
+  </div>
 
 
 
@@ -91,13 +86,13 @@
               <li   class="hidden"><img src="https://th.bing.com/th/id/OIP.7xjuYOvynXWPDhQ9s2LvdgHaJ3?pid=ImgDet&rs=1" alt="piatto"><h3>Pizze speciali</h3>Pizze al taglio speciali</li>
               <li   class="hidden"><img src="https://plus.unsplash.com/premium_photo-1672242676700-6823878b8439?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGRyaW5rc3xlbnwwfHwwfHx8MA%3D%3D" alt="piatto"><h3>Bevande</h3>Bevande, Birre</li>
             </ul>
-            <button id="showMoreButton">Visualizza altro</button>
+            <button id="button" class="button"  style="vertical-align:middle">Visualizza altro</button>
       </div>
 
   <script>
 
-document.getElementById('showMoreButton').addEventListener('click', function() {
-    var button = document.getElementById('showMoreButton');
+document.getElementById('button').addEventListener('click', function() {
+    var button = document.getElementById('button');
     var items = document.querySelectorAll('#menuItems .hidden');
     
     if (button.textContent === "Visualizza altro") {
@@ -177,11 +172,14 @@ document.getElementById('showMoreButton').addEventListener('click', function() {
 
 
 
+<!------------------Inizio Footer------------------------->
+<div class="footer">
+  <br><br>
+  <p>Copyright © 2023 Pizzeria AndVit | All Rights Reserved</p>
+  <br>
+</div>
+<!------------------Fine Footer--------------------------->
 
-    <div id="copy"> <!--background-color: grey;-->
-        <p>riconsocimenti riconsocimenti riconsocimenti</p> <!--color: white; margin: ;-->
-        <p>copyright</p> <!--text-decoration: underline; color: white;-->
-    </div>
 </body>
 </html>
 </div>
