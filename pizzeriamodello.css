@@ -375,9 +375,7 @@ div#chisiamo li {
     margin: 10px;
 }
 
-div#chisiamo li.orari {
-    width: 340px;
-}
+
 
 .orari-container {
     text-align: center; 
@@ -385,7 +383,6 @@ div#chisiamo li.orari {
 
 .orari-container table {
     margin: 0 auto; 
-    border-collapse: collapse;
     width: auto; 
 }
 
