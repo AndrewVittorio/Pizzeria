@@ -412,16 +412,31 @@ div#copy {
 
 
 
-
-
 @media screen and (max-width: 600px) {
     .orari-container table {
-        width: 70%; /* Imposta la larghezza al 70% dello schermo */
+        width: 70%; /* Larghezza della tabella al 70% dello schermo */
         margin: 0 auto; /* Centra la tabella orizzontalmente */
     }
 
-    div#chisiamo li.orari {
-        width: 100%; /* Utilizza l'intera larghezza del contenitore esterno */
+    .orari-container table td {
+        padding: 10px 5px; /* Spaziatura interna ridotta per prevenire a capo */
+        font-size: 16px; /* Dimensione del font per una migliore leggibilità */
+    }
+
+    .orari-container {
         padding: 0 15%; /* Aggiunge spazio ai lati per centrare la tabella */
+    }
+
+    div#chisiamo li.orari {
+        width: auto; /* Larghezza automatica per contenere la tabella */
+        max-width: none; /* Rimuove qualsiasi larghezza massima predefinita */
+    }
+
+    div#chisiamo li.luogo iframe {
+        max-width: 100%; /* Larghezza massima del 100% per evitare overflow */
+        width: 90%; /* Larghezza effettiva al 90% per consentire il margine */
+        margin: 0 auto; /* Centra l'iframe con margini automatici */
+        height: auto; /* Altezza automatica basata sulla proporzione */
+        aspect-ratio: 16 / 9; /* Mantiene le proporzioni della mappa */
     }
 }
