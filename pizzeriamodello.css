@@ -7,7 +7,6 @@ body {
 }
 
 .NavBarAll {
-    height: 50px; 
     display: flex;
     z-index: 10000;
     position: fixed;
@@ -140,7 +139,7 @@ div#testa {
 
 @media screen and (max-width: 600px){
     div#testa {
-        box-shadow: 290px 0 170px black inset;
+        box-shadow: 340px 0 170px black inset;
         padding: 22% 35px 15% 35px;
 }}
 
