@@ -6,16 +6,191 @@ body {
     box-sizing: border-box;
 }
 
-.NavBarAll {
-    display: flex;
-    z-index: 10000;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    background-color: #ce0404;
-    box-shadow: 0 4px 8px 0 #0000005d, 0 6px 20px 0 #0000005d;
-    overflow: hidden;
-  }
+.NavBarAll {<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="stylesheet" href="pizzeriamodello.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+
+
+<div class="NavBarAll">
+  <div class="topnav" id="myTopnav">
+    <a class="active"><h4 style="border-bottom: 1px solid white; padding: 0px;" >Pizzeria Ternana</h4></a>
+      <a href="#Modelli">Modelli</a>
+      <a href="#Testimonianza">Testimonianza</a>
+      <a href="#Contatti">Contatti</a>
+      <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveMenu()">&#9776;</a>
+  </div>
+</div>
+
+  <script>
+    function toggleResponsiveMenu() {
+        var navbar = document.getElementById("myTopnav");
+        if (navbar.className === "topnav") {
+            navbar.className += " responsive";
+        } else {
+            navbar.className = "topnav";
+        }
+    }
+    
+    document.addEventListener("DOMContentLoaded", function () {
+        // Setup event listeners for menu items
+        const menuItems = document.querySelectorAll('#myTopnav a:not(.icon)');
+        menuItems.forEach(item => {
+            item.addEventListener('click', function() {
+                var navbar = document.getElementById("myTopnav");
+                if (navbar.className.includes("responsive")) {
+                    navbar.className = "topnav";
+                }
+            });
+        });
+    });
+  </script>
+
+
+
+    
+    <div id="testa">
+        <h2>testo testo testo<br>testo testo testo<br>testo testo testo</h2> <!--padding: 50px 30px; position left-->
+        <h5 style="margin-top: 5px;">-nome poeta</h5> <!--margin-top: -20px;-->
+        <button class="menu"><a href="menupizzeria.html">Visualizza Menù</a></button> <!--border-radius: ; border: color;-->
+    </div>
+
+
+
+    <br>
+    <br>
+    <div id="bio">
+      <img src="https://lazioshopping.it/wp-content/uploads/2021/10/2017-03-27.jpg" alt="pizza">
+      <div class="text-container">
+          <h5 class="a">Benvenuto a</h5>
+          <h2 class="a">Pizzeria Ternana</h2>
+          <p class="a">
+            Benvenuti alla "PizzeriaTernana"! 
+            Da oltre un quarto di secolo, siamo il punto di riferimento
+             per pizze autentiche e piatti italiani deliziosi. 
+             La nostra storia è una storia d'amore per la pizza 
+             e la tradizione italiana. Siamo pronti ad accogliervi con
+             calore e passione ogni giorno!</p>
+
+      </div>
+  </div>
+
+
+
+      <div id="menu">
+          <h1>Il nostro Menù</h1>
+          <ul id="menuItems">
+              <li class="1"><img src="https://menu.sluurpy.it/foto-g/40333/3160104.jpg" alt="piatto"><h3>specialità</h3>Le nostre specialità</li>
+              <li class="3"><img src="https://b.zmtcdn.com/data/pictures/9/16555139/5c9a812705dbeba10571202b250f489f_featured_v2.jpg" alt="piatto"><h3>Pizze rosse</h3>Pizze al taglio rosse</li>
+
+              <li  class="hidden"><img src="https://lazioshopping.it/wp-content/uploads/2021/10/IMG_20181211_130036.jpg" alt="piatto"><h3>Insalate</h3>Insalate a scelta</li>
+              <li   class="hidden"><img src="https://th.bing.com/th/id/OIP.o8QCo0IdtciLLGphRMfvdwHaJ4?pid=ImgDet&rs=1" alt="piatto"><h3>Fritti</h3>Fritti</li>
+              <li   class="hidden"><img src="https://th.bing.com/th/id/OIP.7xjuYOvynXWPDhQ9s2LvdgHaJ3?pid=ImgDet&rs=1" alt="piatto"><h3>Pizze speciali</h3>Pizze al taglio speciali</li>
+              <li   class="hidden"><img src="https://plus.unsplash.com/premium_photo-1672242676700-6823878b8439?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGRyaW5rc3xlbnwwfHwwfHx8MA%3D%3D" alt="piatto"><h3>Bevande</h3>Bevande, Birre</li>
+            </ul>
+            <button id="button" class="button"  style="vertical-align:middle">Visualizza altro</button>
+      </div>
+
+  <script>
+
+document.getElementById('button').addEventListener('click', function() {
+    var button = document.getElementById('button');
+    var items = document.querySelectorAll('#menuItems .hidden');
+    
+    if (button.textContent === "Visualizza altro") {
+        // Se il testo è "Visualizza altro", mostra gli elementi e cambia il testo in "Chiudi"
+        items.forEach(function(item) {
+            item.style.display = 'block';
+        });
+        button.textContent = "Chiudi";
+    } else {
+        // Se il testo è "Chiudi", nascondi gli elementi e cambia il testo in "Visualizza altro"
+        items.forEach(function(item) {
+            item.style.display = 'none';
+        });
+        button.textContent = "Visualizza altro";
+    }
+});
+
+  </script>
+
+
+
+
+
+
+<!---
+    <div id="pie"> 
+        <ul> 
+            <li class="prezzi"><h2>portate</h2><h4>nomep</h4><p>bio bio bio bio bio bio bio bio bio bio</p></li> 
+            <li class="specialita"><h2>specialità</h2><h4>nomep</h4><p>bio bio bio bio bio bio bio bio bio bio</p></li>
+
+        </ul>
+    </div>  -->
+
+
+    <div id="chisiamo"> <!--background-image: height<width;-->
+        <ul> <!--flexbox-->
+          <li class="orari">
+            <h3>Orari di Apertura</h3>
+            <div class="orari-container">
+            <table>
+                <tr>
+                    <td>Lunedì:</td>
+                    <td>8:30 - 21:00</td>
+                </tr>
+                <tr>
+                    <td>Martedì:</td>
+                    <td>8:30 - 21:00</td>
+                </tr>
+                <tr>
+                    <td>Mercoledì:</td>
+                    <td>8:30 - 21:00</td>
+                </tr>
+                <tr>
+                    <td>Giovedì:</td>
+                    <td>8:30 - 21:00</td>
+                </tr>
+                <tr>
+                    <td>Venerdì:</td>
+                    <td>8:30 - 21:00</td>
+                </tr>
+                <tr>
+                    <td>Sabato:</td>
+                    <td>8:30 - 21:00</td>
+                </tr>
+                <tr>
+                    <td>Domenica:</td>
+                    <td>Chiuso</td>
+                </tr>
+            </table>
+          </div>
+        </li>
+        
+            <li class="luogo"><h3>Dove ci troviamo</h3><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1049.7247022798872!2d12.503883694328994!3d41.912857738924245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f610d1b9afa0d%3A0xe95962ba40e45ad9!2sPizzeria%20Ternana!5e0!3m2!1sit!2sit!4v1698873935515!5m2!1sit!2sit" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+            <!-- top-> text-decoration: none; border-radius: 10px; margin: ; text-align: center;-->
+        </ul>
+    </div>
+
+
+
+<!------------------Inizio Footer------------------------->
+<div class="footer">
+  <br><br>
+  <p>Copyright © 2023 Pizzeria AndVit | All Rights Reserved</p>
+  <br>
+</div>
+<!------------------Fine Footer--------------------------->
+
+</body>
+</html>
+</div>
   
   .topnav {
     overflow: hidden;
