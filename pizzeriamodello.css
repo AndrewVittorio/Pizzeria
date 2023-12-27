@@ -140,7 +140,7 @@ div#testa {
 
 @media screen and (max-width: 600px){
     div#testa {
-        box-shadow: 340px 0 170px black inset;
+        box-shadow: 310px 0 170px black inset;
         padding: 22% 35px 15% 35px;
 }}
 
