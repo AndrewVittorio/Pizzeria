@@ -7,6 +7,7 @@ body {
 }
 
 .NavBarAll {
+    height: 50px; 
     display: flex;
     z-index: 10000;
     position: fixed;
@@ -129,17 +130,28 @@ body {
 
 div#testa {
 
-    background-image: url(https://just-eat-prod-eu-res.cloudinary.com/image/upload/c_fill,f_auto,q_auto,w_1200,h_630,d_it:cuisines:pizza-1.jpg/v1/it/restaurants/229541.jpg);
+    background-image: url(fotoheropizza.jpg);
     background-size: cover;
-    box-shadow: 300px 0 170px black inset;
+    background-position: center left;
+    box-shadow: 600px 0 170px black inset;
     color: white;
-    padding: 45px 35px;
+    padding: 22% 35px 15% 35px;
 }
 
+@media screen and (max-width: 600px){
+    div#testa {
+        box-shadow: 340px 0 170px black inset;
+        padding: 22% 35px 15% 35px;
+}}
+
+
+
 div#testa button a {
-    color: white;
+    color: black;
     text-decoration: none;
-    padding: 0px 10px; }
+    padding: 0px 10px;
+
+}
 
 
 
@@ -176,87 +188,44 @@ div#simboli a {
 
 
 
-
 div#bio {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
+    flex-direction: row; /* Elementi affiancati */
+    align-items: center; /* Centra gli elementi verticalmente */
+    justify-content: center; /* Centra gli elementi orizzontalmente */
     margin: 20px;
-    padding: 0px 20px;
-}
-
-div#bio img {
-    flex-shrink: 0; /* Impedisce all'immagine di ridursi su schermi piccoli */
-    width: 100%;
-    max-width: 300px; /* Imposta una larghezza massima per l'immagine */
-    margin: 10px;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge un po' di ombra per profondità */
+    padding: 20px;
 }
 
 div#bio .text-container {
     flex-grow: 1;
-    max-width: 600px; /* Imposta una larghezza massima per il contenuto del testo */
-    padding: 0 20px; /* Aggiunge padding per il testo */
+    max-width: 600px; /* Larghezza massima per il testo */
 }
 
-div#bio h5.a {
-    font-size: 1.2em;
-    color: #555;
-    margin-bottom: 5px;
-}
-
-div#bio h2.a {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-div#bio p.a {
-    font-size: 1em;
-    color: #666;
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
-
-div#bio ul.a {
-    list-style: none; /* Rimuove i punti dalla lista */
-    padding-left: 0; /* Rimuove il padding predefinito */
-}
-
-div#bio ul.a li {
-    margin-bottom: 5px; /* Aggiunge spazio tra gli elementi della lista */
-    font-size: 1em;
-    color: #666;
+div#bio img {
+    flex-shrink: 0; /* Impedisce all'immagine di ridursi su schermi piccoli */
+    max-width: 300px; /* Larghezza massima per l'immagine */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra per profondità */
+    margin-left: 20px; /* Spazio a sinistra dell'immagine */
 }
 
 @media (max-width: 768px) {
     div#bio {
-        flex-direction: column; /* Impila l'immagine e il testo verticalmente su schermi piccoli */
-        align-items: center; /* Centra gli elementi su schermi piccoli */
+        flex-direction: column; /* Impila verticalmente su schermi piccoli */
+        align-items: center; /* Centra gli elementi */
     }
 
     div#bio img {
-        width: 80%; /* Riduce la larghezza dell'immagine su schermi piccoli */
-        margin-bottom: 20px; /* Aggiunge spazio sopra il testo */
+        width: 80%; /* Larghezza completa dell'immagine su dispositivi mobili */
+        margin: 10px 0; /* Margini sopra e sotto l'immagine */
     }
 
     div#bio .text-container {
-        padding: 0; /* Rimuove il padding su dispositivi mobili per sfruttare tutto lo spazio disponibile */
+        width: 100%; /* Larghezza completa per il testo su dispositivi mobili */
+        padding: 0; /* Rimuove il padding */
     }
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -321,9 +290,9 @@ div#menu h1 {
 .button {
     display: inline-block;
     border-radius: 4px;
-    background-color: black; /* Sfondo nero */
+    background-color: white; /* Sfondo nero */
     border: none;
-    color: white; /* Testo bianco */
+    color:black; /* Testo bianco */
     text-align: center;
     font-size: 16px;
     padding: 10px 20px;
@@ -364,8 +333,8 @@ div#menu h1 {
 }
 
 .button:hover {
-    background-color: white; /* Cambia lo sfondo del bottone al passaggio del mouse */
-    color: black; /* Cambia il colore del testo del bottone al passaggio del mouse */
+    background-color: black; /* Cambia lo sfondo del bottone al passaggio del mouse */
+    color: white; /* Cambia il colore del testo del bottone al passaggio del mouse */
 }
 
 
