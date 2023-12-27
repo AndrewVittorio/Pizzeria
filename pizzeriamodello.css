@@ -375,6 +375,10 @@ div#chisiamo li {
     margin: 10px;
 }
 
+div#chisiamo li.orari {
+    width: 340px;
+}
+
 .orari-container {
     text-align: center; 
 }
@@ -411,8 +415,8 @@ div#copy {
 
 
 @media screen and (max-width: 600px) {
-    .orari {
-        width: 80%; /* Imposta la larghezza al 70% dello schermo */
+    .orari-container table {
+        width: 70%; /* Imposta la larghezza al 70% dello schermo */
         margin: 0 auto; /* Centra la tabella orizzontalmente */
     }
 
