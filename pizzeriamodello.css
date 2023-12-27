@@ -375,29 +375,15 @@ div#chisiamo li {
     margin: 10px;
 }
 
-div#chisiamo li.orari {
-    width: 340px;
-}
-
-
-
-
-
 .orari-container {
-    text-align: center; /* Centra il contenuto della tabella */
-
+    text-align: center; 
 }
 
-.orari table {
-    margin: 0 auto; /* Centra la tabella orizzontalmente */
+.orari-container table {
+    margin: 0 auto; 
     border-collapse: collapse;
-    width: auto; /* O una larghezza specifica, se necessario */
+    width: auto; 
 }
-
-.orari-container {
-    width: 100%; /* Rimuovi se vuoi che la tabella si adatti alla larghezza del contenitore */
-}
-
 
 .orari td {
     padding: 5px;
@@ -405,10 +391,9 @@ div#chisiamo li.orari {
 }
 
 .orari h3 {
-    text-align: center; /* Centra il titolo */
+    text-align: center;
     margin-bottom: 10px;
 }
-
 
 
 div#copy {
@@ -427,15 +412,12 @@ div#copy {
 
 @media screen and (max-width: 600px) {
     .orari-container table {
-/* Assicura che la tabella utilizzi l'intera larghezza disponibile */
+        width: 70%; /* Imposta la larghezza al 70% dello schermo */
+        margin: 0 auto; /* Centra la tabella orizzontalmente */
     }
 
     div#chisiamo li.orari {
-        width: 540px; /* Rende il container degli orari più largo e meno lungo */
-    }
-
-    div#chisiamo li.luogo iframe {
-        width: 320px; /* Riduce la larghezza della mappa */
-        margin: 0 auto; /* Centra la mappa e aggiunge margine sui lati */
+        width: 100%; /* Utilizza l'intera larghezza del contenitore esterno */
+        padding: 0 15%; /* Aggiunge spazio ai lati per centrare la tabella */
     }
 }
