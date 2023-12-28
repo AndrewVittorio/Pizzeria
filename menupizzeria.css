@@ -22,8 +22,7 @@ div#navb {
     border-bottom: 1px solid #b8b5b5;
 }
 div#navb img {
-    width: 50px;
-    border-radius: 50px;
+    width: 150px;
 }
 div#selection {
     position: fixed;
